@@ -48,7 +48,7 @@ const MyAppointments = () => {
     }
   };
 
-  const cancelAppointment = async (appointmentId) => {
+  const cancelAppointment = async (appointmentId, paidOnline) => {
     try {
       // console.log(userData._id);
       const { data } = await axios.post(
@@ -58,6 +58,9 @@ const MyAppointments = () => {
       );
       if (data.success) {
         toast.success(data.message);
+        if (paidOnline) {
+          toast.success("Amount refunded");
+        }
         getUserAppointments();
       } else {
         toast.error(data.message);
@@ -167,7 +170,7 @@ const MyAppointments = () => {
               )}
               {!item.cancelled && (
                 <button
-                  onClick={() => cancelAppointment(item._id)}
+                  onClick={() => cancelAppointment(item._id, item.payment)}
                   className="text-sm text-stone-500 text-center sm:min-w-48 py-2 border rounded hover:bg-red-600 hover:text-white transition-all duration-500"
                 >
                   Cancel appointment

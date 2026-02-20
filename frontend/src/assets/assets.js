@@ -4,7 +4,7 @@ import group_profiles from './group_profiles.png'
 import profile_pic from './profile_pic.png'
 import contact_image from './contact_image.png'
 import about_image from './about_image.png'
-import logo from './logo.svg'
+import logo from './logo.png'
 import dropdown_icon from './dropdown_icon.svg'
 import menu_icon from './menu_icon.svg'
 import cross_icon from './cross_icon.png'
@@ -32,7 +32,7 @@ import doc14 from './doc14.png'
 import doc15 from './doc15.png'
 import Dermatologist from './Dermatologist.svg'
 import Gastroenterologist from './Gastroenterologist.svg'
-import General_physician from './General_physician.svg'
+import General_Physician from './General_Physician.svg'
 import Gynecologist from './Gynecologist.svg'
 import Neurologist from './Neurologist.svg'
 import Pediatricians from './Pediatricians.svg'
@@ -60,8 +60,8 @@ export const assets = {
 
 export const specialityData = [
     {
-        speciality: 'General physician',
-        image: General_physician
+        speciality: 'General Physician',
+        image: General_Physician
     },
     {
         speciality: 'Gynecologist',
@@ -90,7 +90,7 @@ export const doctors = [
         _id: 'doc1',
         name: 'Dr. Richard James',
         image: doc1,
-        speciality: 'General physician',
+        speciality: 'General Physician',
         degree: 'MBBS',
         experience: '4 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -174,7 +174,7 @@ export const doctors = [
         _id: 'doc7',
         name: 'Dr. Christopher Davis',
         image: doc7,
-        speciality: 'General physician',
+        speciality: 'General Physician',
         degree: 'MBBS',
         experience: '4 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -258,7 +258,7 @@ export const doctors = [
         _id: 'doc13',
         name: 'Dr. Chloe Evans',
         image: doc13,
-        speciality: 'General physician',
+        speciality: 'General Physician',
         degree: 'MBBS',
         experience: '4 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
